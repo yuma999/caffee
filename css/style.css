@@ -84,7 +84,7 @@ body {
 
 
 
-.menu .top h1 {
+.menu .top {
   background: url(../img/menu.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -122,7 +122,7 @@ body {
 
 
 
-.about .top h1 {
+.about .top {
   background: url(../img/about.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -178,7 +178,7 @@ body {
 
 
 
-.location .top h1 {
+.location .top {
   background: url(../img/location.jpg); 
   background-attachment: fixed;
   background-size: cover;
@@ -299,9 +299,17 @@ address p {
   .page-top i {
     font-size: 2rem;
   }
+
+  .menu.top,
+  .about.top,
+  .location.top {
+    background-attachment: scroll;
+  }
+
 }
 @media screen and (max-width : 340px) {
   .header-title {
     font-size: 78px;
   }
+  
 }
