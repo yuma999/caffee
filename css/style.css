@@ -1,0 +1,307 @@
+body {
+  font-family: Meiryo;
+  font-size: 14.4;
+  margin: 0 auto;
+}
+
+
+
+.top h1 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 72px;
+  color: #fff;
+  padding: 110px 0;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.title h1 {
+  font-family: Arial;
+  font-size: 40px;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin: 0;
+  border-bottom: 5px solid #E03131;
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0 150px 0;
+  margin: 0 140px;
+}
+
+
+
+
+.header {
+  background: url(../img/mainvisual.jpg);  
+  color: #fff;
+  margin-bottom: 10px;
+}
+.link ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+.link ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 1px;
+  position: relative;
+}
+.link ul li a::after {
+  background-color: red;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: .5s all;
+  width: 0;
+}
+.link ul li a:hover::after {
+  width: 100%;
+}
+.link ul li {
+  padding: 10px 20px 0 0;
+}
+.header-title {
+  font-family: Arial;
+  font-size: 120px;
+  padding: 200px 0;
+  text-align: center;
+}
+
+
+
+
+.menu .top h1 {
+  background: url(../img/menu.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.menu .top h1 {
+  margin-top: 10px;
+}
+
+/* 縦線 */
+.border-right {
+  margin: 0 10px;
+  border: 1px solid #000;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.list dl {
+  display: flex;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.list dl dt {
+  border-bottom: 1px solid #000;
+  width: 341px;
+}
+.list dl dd {
+  padding-left: 5px;
+  margin: 0;
+}
+
+
+
+
+.about .top h1 {
+  background: url(../img/about.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.about .center {
+  display: block;
+}
+.about .text {
+  display: flex;
+  align-items: center;
+}
+.about .text ul {
+  list-style: none;
+  margin: 0;
+}
+.about .text ul li {
+  width: 98%;
+}
+.about .text ul li p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+.more {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto;
+  position: relative;
+}
+.more::before, .more::after {
+	content: '';
+	width: 25px;
+	height: 25px;
+	position: absolute;
+}
+
+.more::before {
+	border-left: solid 1px #E03131;
+	border-top: solid 1px #E03131;
+	top: 0;
+	left: 0;
+}
+
+.more::after {
+	border-right: solid 1px #E03131;
+	border-bottom: solid 1px #E03131;
+	bottom: 0;
+	right: 0;
+}
+
+
+
+.location .top h1 {
+  background: url(../img/location.jpg); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.location .center {
+  flex-direction: column;
+}
+address ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+address ul li {
+  font-family: Arial;
+  width: 98%;
+  line-height: 2;
+  padding-bottom: 5px;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+address p {
+  margin: 0;
+}
+
+
+
+
+
+.footer {
+  text-align: center;
+}
+.footer p {
+  font-size: 10px;
+}
+
+
+.page-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+}
+.page-top i {
+  color: #000;
+  font-size: 3rem;
+}
+.page-top i:hover {
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+  body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .top h1 {
+    font-size: 32px;
+    padding: 30px 0;
+  }
+
+  .title {
+    padding-bottom: 40px;
+  }
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .center,
+  .about .text {
+    flex-direction: column;
+  }
+
+  .center {
+    margin: 0;
+    padding: 70px 0 100px 0;
+  }
+
+
+  .header-title {
+    font-size: 84.5px;
+  }
+  .border-right {
+    display: none;
+  }
+
+  .food-menu,
+  .other-menu {
+    margin-top: 70px;
+  }
+  .menu .list dl {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about .text ul {
+    padding: 0;
+  }
+  .about .text ul li,
+  address ul li {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+
+  .page-top i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width : 340px) {
+  .header-title {
+    font-size: 78px;
+  }
+}
