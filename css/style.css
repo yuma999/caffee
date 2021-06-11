@@ -300,11 +300,6 @@ address p {
     font-size: 2rem;
   }
 
-  .menu.top,
-  .about.top,
-  .location.top {
-    background-attachment: scroll;
-  }
 
 }
 @media screen and (max-width : 340px) {
